@@ -1,0 +1,12 @@
+<aside class="tsd-sources">
+    {{#if implementationOf}}
+        <p><span>Implementation of</span> {{#with
+            implementationOf}}{{> typeAndParent}}{{/with}}</p>
+    {{/if}}
+    {{#if inheritedFrom}}
+        <p><span>Inherited from</span> {{#with inheritedFrom}}{{> typeAndParent}}{{/with}}</p>
+    {{/if}}
+    {{#if overwrites}}
+        <p><span>Overrides</span> {{#with overwrites}}{{> typeAndParent}}{{/with}}</p>
+    {{/if}}
+</aside>
