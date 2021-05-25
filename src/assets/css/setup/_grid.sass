@@ -53,7 +53,7 @@
 @for $width from 1 to 12
     .col-#{$width}
         @extend .col
-        width: math.div($width, 12) * 100%
+        width: $width / 12 * 100%
 
     .offset-#{$width}
-        margin-left: math.div($width, 12) * 100%
+        margin-left: $width / 12 * 100%
