@@ -9,11 +9,11 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "webpack --mode=production --node-env=production && gulp typedoc:copy-styles",
-    "build:dev": "webpack --mode=development && gulp typedoc:copy-styles",
-    "build:prod": "webpack --mode=production --node-env=production && gulp typedoc:copy-styles",
-    "watch": "webpack --watch && gulp typedoc:copy-styles",
-    "serve": "webpack serve && gulp typedoc:copy-styles"
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
   },
   "keywords": [
     "typedoc",
