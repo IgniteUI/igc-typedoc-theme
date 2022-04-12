@@ -4,7 +4,7 @@ import { copy } from "fs-extra";
 import { Application, DefaultTheme, DefaultThemeRenderContext, JSX, Options, PageEvent, Reflection, Renderer, RendererEvent } from "typedoc";
 import { defaultLayout } from "./layouts/default";
 
-export class IgcThemeRenderContext extends DefaultThemeRenderContext {
+export class IgThemeRenderContext extends DefaultThemeRenderContext {
     constructor(theme: DefaultTheme, options: Options) {
         super(theme, options);
 
@@ -16,8 +16,8 @@ export class IgcThemeRenderContext extends DefaultThemeRenderContext {
     }
 };
 
-export class IgcTheme extends DefaultTheme {
-    private _ctx?: IgcThemeRenderContext;
+export class IgTheme extends DefaultTheme {
+    private _ctx?: IgThemeRenderContext;
 
     public constructor(renderer: Renderer) {
         super(renderer);
@@ -28,15 +28,15 @@ export class IgcTheme extends DefaultTheme {
             await copy(
               path.join(
                 process.cwd(),
-                '/node_modules/ig-typedoc-theme/dist/assets',
+                '/node_modules/igc-typedoc-theme/dist/assets',
               ),
               path.join(out, '/assets'),
             );
         });
     }
 
-    override getRenderContext(): IgcThemeRenderContext {
-        this._ctx ||= new IgcThemeRenderContext(
+    override getRenderContext(): IgThemeRenderContext {
+        this._ctx ||= new IgThemeRenderContext(
             this,
             this.application.options
         );
@@ -59,5 +59,5 @@ export function load(app: Application) {
         )
     )
 
-    app.renderer.defineTheme('igctheme', IgcTheme);
+    app.renderer.defineTheme('igtheme', IgTheme);
 }
