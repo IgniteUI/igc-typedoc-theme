@@ -1,0 +1,19 @@
+{
+    "en": {
+        "development": {
+            "url": "https://dev.infragistics.com",
+            "gaID": "GTM-WLXLBZD",
+            "typedoc_default_url": "https://staging.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/"
+        },
+        "staging": {
+            "url": "https://staging.infragistics.com",
+            "gaID": "GTM-NCKNPN",
+            "typedoc_default_url": "https://staging.infragistics.com/products/ignite-ui-angular/docs/typescript/latest/"
+        },
+        "production": {
+            "url": "https://www.infragistics.com",
+            "gaID": "GTM-T65CF7",
+            "typedoc_default_url": "https://www.infragistics.com/products/ignite-ui/dock-manager/docs/typescript/latest/"
+        }
+    }
+}
